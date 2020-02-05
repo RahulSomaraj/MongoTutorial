@@ -1,0 +1,11 @@
+How to take a mongodump in mongo db
+
+
+mongodump --host 13.232.31.200 --port 27017 --db truckBookerDB --username
+    Username --password Password --out ../foldername 
+    
+Mogo restore 
+
+mongorestore  Dump-folderName/
+
+where dump is the folder name 
