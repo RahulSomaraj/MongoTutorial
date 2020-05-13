@@ -9,3 +9,14 @@ Mogo restore
 mongorestore  Dump-folderName/
 
 where dump is the folder name 
+
+
+
+mongodump --host 'sourceRS/source-host1:27017,source-host2:27017,source-host3:27017' \
+          --archive --ssl \
+          --username '<mySourceUser>' \
+          --password '<sourcePassword>' \
+          --authenticationDatabase admin \
+| \
+mongorestore --host myAtlasRS/atlas-host1:27017,atlas-host2:27017,atlas-host3:27017 --archive --ssl  --username '<myAtlasAdminUser>' --password '<atlasPassword>' --authenticationDatabase admin --nsExclude 'admin.system.*'
+             
