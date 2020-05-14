@@ -1,0 +1,3 @@
+Hwo to connect to a remote  mongo instance 
+
+mongo --host 13.232.31.200 --port 27017 --username  truckBooker --password truckOh3TbYhx8t1oOL --authenticationDatabase truckBookerDB
