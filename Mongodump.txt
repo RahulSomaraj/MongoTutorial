@@ -19,4 +19,8 @@ mongodump --host 'sourceRS/source-host1:27017,source-host2:27017,source-host3:27
           --authenticationDatabase admin \
 | \
 mongorestore --host myAtlasRS/atlas-host1:27017,atlas-host2:27017,atlas-host3:27017 --archive --ssl  --username '<myAtlasAdminUser>' --password '<atlasPassword>' --authenticationDatabase admin --nsExclude 'admin.system.*'
+
+
+ mongodump --host 13.232.31.200 --port 27017 --db truckBookerDB --username truckBooker --password truckOh3TbYhx8t1oOL --out ../09-10-20201527
+
              
